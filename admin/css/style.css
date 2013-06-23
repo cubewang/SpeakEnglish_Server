@@ -1,0 +1,7 @@
+#backGround{height:250px;width: 100%; background: url("../images/top.jpeg") no-repeat 50% 50%;background-size: cover;}
+.logo{width:162px; height:61px; position:absolute; left:50px; top:50px; }
+#backGround p {text-align:center; font-size:48px; color: #ffffff; padding-top:150px;}
+.text{ width:434px; height:260px; margin:0 auto ; font-size:14px; color:#595959;padding-top:10px;}
+.text p {margin: 10px; padding: 5px; line-height: 32px;}
+.text p label {text-align: right; padding-right: 10px;}
+

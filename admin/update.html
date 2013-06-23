@@ -1,0 +1,52 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title> 内容录制</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="../admin/css/admin.css" type="text/css">
+    <link rel="stylesheet" href="../admin/css/base.css" type="text/css">
+    <link rel="stylesheet" href="../admin/css/style.css" type="text/css">
+    <script src="../admin/js/admin.js"></script>
+</head>
+<body>
+<div id="backGround">
+    <div class="logo"><img src="../admin/images/logo.png"></div>
+    <p> 编辑上传工具</p></div>
+<form action="contentRequest.php" method="post" name="forminfo" id="forminfo" target="post_frame"
+      enctype="multipart/form-data">
+    <iframe name="post_frame" id="post_frame" style="display:none;"></iframe>
+    <div id="account">
+        <a>账号:</a><input type="text" name="username" id="username">
+        <a>密码:</a><input type="password" name="password" id="password">
+    </div>
+    <div id="address">
+        <a>url :</a><input type="text" name="url" class="url" placeholder="内容中的链接地址">
+    </div>
+    <div id="editorarea">
+        <textarea name="content" id="content" class="text" cols="64" rows="15" placeholder="内容编辑"></textarea>
+        <input type="file" class="media1" name="media1" id="media1" onchange="previewImage(this)">
+        <input type="file" class="media2" name="media2" id="media2" onchange="previewImage2(this)">
+    </div>
+    <div id="btnSub">
+        <button type="button" name="cont" id="cont" class="btn btn-success" onclick="doSub()">
+            <i class="icon-plus icon-white"></i>
+            <span id="btnTxt"><strong>提交</strong></span>
+        </button>
+    </div>
+    <div id="btnSubOverlapping" hidden="true" >
+        <button class="loading" disabled="true">
+            <span><img src="images/icon_processing.gif"></span></button>
+    </div>
+    <div id="preview">
+        <img id="imghead" width=100 height=100 border=0>
+    </div>
+    <div id="preview2">
+        <img id="imghead2" width=100 height=100 border=0>
+    </div>
+</form>
+</body>
+</html>
